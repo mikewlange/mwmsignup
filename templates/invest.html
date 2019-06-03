@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <body>
+      <h2 style = "text-align: center;">Contact Form</h2>
+
+      <form action = "/invest" method = post>
+         <fieldset>
+            <legend>Contact Form</legend>
+
+            <div style = font-size:20px;>
+               {{ form.full_name.label }}<br>
+               {{ form.full_name }}
+               <br>
+
+
+               {{ form.email.label }}<br>
+               {{ form.email }}
+               <br>
+
+               {{ form.investor_type.label }}<br>
+               {{ form.investor_type }}
+               <br>
+               {{ form.submit }}
+            </div>
+
+         </fieldset>
+      </form>
+   </body>
+</html>
